@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/loch/vs_code/c++/boston_final/build",
+  "command": "/usr/bin/g++   -I/usr/include/SDL2  -g   -o CMakeFiles/spies_purgitory.dir/src/gameplay/heart/heart.cpp.o -c /home/loch/vs_code/c++/boston_final/src/gameplay/heart/heart.cpp",
+  "file": "/home/loch/vs_code/c++/boston_final/src/gameplay/heart/heart.cpp"
+},
+{
+  "directory": "/home/loch/vs_code/c++/boston_final/build",
+  "command": "/usr/bin/g++   -I/usr/include/SDL2  -g   -o CMakeFiles/spies_purgitory.dir/src/rendering/rendering.cpp.o -c /home/loch/vs_code/c++/boston_final/src/rendering/rendering.cpp",
+  "file": "/home/loch/vs_code/c++/boston_final/src/rendering/rendering.cpp"
+},
+{
+  "directory": "/home/loch/vs_code/c++/boston_final/build",
+  "command": "/usr/bin/g++   -I/usr/include/SDL2  -g   -o CMakeFiles/spies_purgitory.dir/src/gameplay/scout/scout.cpp.o -c /home/loch/vs_code/c++/boston_final/src/gameplay/scout/scout.cpp",
+  "file": "/home/loch/vs_code/c++/boston_final/src/gameplay/scout/scout.cpp"
+},
+{
+  "directory": "/home/loch/vs_code/c++/boston_final/build",
+  "command": "/usr/bin/g++   -I/usr/include/SDL2  -g   -o CMakeFiles/spies_purgitory.dir/main.cpp.o -c /home/loch/vs_code/c++/boston_final/main.cpp",
+  "file": "/home/loch/vs_code/c++/boston_final/main.cpp"
+}
+]
