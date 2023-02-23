@@ -17,12 +17,12 @@ src/gameplay/heart/heart.h
 /home/loch/vs_code/c++/boston_final/src/gameplay/heart/heart.h
 src/gameplay/scout/scout.h
 /home/loch/vs_code/c++/boston_final/src/gameplay/scout/scout.h
+src/gameplay/box/box.h
+/home/loch/vs_code/c++/boston_final/src/gameplay/box/box.h
 
-/home/loch/vs_code/c++/boston_final/src/gameplay/heart/heart.cpp
-heart.h
-/home/loch/vs_code/c++/boston_final/src/gameplay/heart/heart.h
-iostream
--
+/home/loch/vs_code/c++/boston_final/src/gameplay/box/box.h
+../../rendering/rendering.h
+/home/loch/vs_code/c++/boston_final/src/rendering/rendering.h
 
 /home/loch/vs_code/c++/boston_final/src/gameplay/heart/heart.h
 ../../rendering/rendering.h
@@ -30,25 +30,11 @@ iostream
 string
 -
 
-/home/loch/vs_code/c++/boston_final/src/gameplay/scout/scout.cpp
-scout.h
-/home/loch/vs_code/c++/boston_final/src/gameplay/scout/scout.h
-iostream
--
-
 /home/loch/vs_code/c++/boston_final/src/gameplay/scout/scout.h
 ../../rendering/rendering.h
 /home/loch/vs_code/c++/boston_final/src/rendering/rendering.h
 SDL.h
 -
-
-/home/loch/vs_code/c++/boston_final/src/rendering/rendering.cpp
-SDL.h
--
-iostream
--
-rendering.h
-/home/loch/vs_code/c++/boston_final/src/rendering/rendering.h
 
 /home/loch/vs_code/c++/boston_final/src/rendering/rendering.h
 SDL.h

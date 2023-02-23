@@ -2,6 +2,12 @@
 
 #include <iostream>
 
+
+HEART::HEART(SDL_Renderer * rend) {
+  setTexture(rend, ASSETPATH"interactable/heart.bmp");
+}
+
+// draws and moves the undertale heart
 void HEART::draw_heart(
   SDL_Renderer * rend,
   SDL_Window * win
@@ -27,6 +33,7 @@ void HEART::draw_heart(
   );
 }
 
+// when any arrow key is relesed
 void HEART::query_keys_up(SDL_Event & ev) {
 
   switch (ev.key.keysym.sym){
@@ -51,6 +58,7 @@ void HEART::query_keys_up(SDL_Event & ev) {
 
 }
 
+// when any arrow key is pressed down
 void HEART::query_keys_down(SDL_Event & ev) {
 
   switch (ev.key.keysym.sym){

@@ -35,7 +35,7 @@ public:
   );
 
   ~IMAGE();
-  SDL_Texture * tex;
+  SDL_Texture * tex = nullptr;
   
 
   void setTexture(

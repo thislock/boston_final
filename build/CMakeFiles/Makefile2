@@ -858,12 +858,12 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 CMakeFiles/spies_purgitory.dir/all:
 	$(MAKE) -f CMakeFiles/spies_purgitory.dir/build.make CMakeFiles/spies_purgitory.dir/depend
 	$(MAKE) -f CMakeFiles/spies_purgitory.dir/build.make CMakeFiles/spies_purgitory.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/loch/vs_code/c++/boston_final/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target spies_purgitory"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/loch/vs_code/c++/boston_final/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target spies_purgitory"
 .PHONY : CMakeFiles/spies_purgitory.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/spies_purgitory.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/loch/vs_code/c++/boston_final/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/loch/vs_code/c++/boston_final/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/spies_purgitory.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/loch/vs_code/c++/boston_final/build/CMakeFiles 0
 .PHONY : CMakeFiles/spies_purgitory.dir/rule

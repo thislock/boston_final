@@ -12,8 +12,8 @@ void SCOUT::draw_scout(SDL_Renderer * rend, SDL_Window * win) {
     // texture to render
     head,
     // pos and scale
-    x, y + 2,
-    30, 30
+    x + head_x, y + head_y,
+    32, 40
   );
   
   renderResizedInputedTexture(
@@ -22,7 +22,7 @@ void SCOUT::draw_scout(SDL_Renderer * rend, SDL_Window * win) {
     // texture to render
     torso,
     // pos and scale
-    x, y,
+    x + torso_x, y + torso_y,
     50, 55
   );
   
@@ -32,14 +32,12 @@ void SCOUT::draw_scout(SDL_Renderer * rend, SDL_Window * win) {
     // texture to render
     legs,
     // pos and scale
-    x, y,
-    20, 30
+    x + legs_x, y + legs_y,
+    38, 60
   );
 
 
 }
-
-
 
 SCOUT::SCOUT(SDL_Renderer * rend) {
   head =  returnTexture(rend, ASSETPATH"scout/head.bmp");
@@ -47,8 +45,9 @@ SCOUT::SCOUT(SDL_Renderer * rend) {
   legs =  returnTexture(rend, ASSETPATH"scout/legs.bmp");
 }
 SCOUT::~SCOUT() {
-  std::cout << "destroyed scout elements\n";
+  std::cout << "destroying scout elements... ";
   SDL_DestroyTexture(head);
   SDL_DestroyTexture(torso);
   SDL_DestroyTexture(legs);
+  std::cout << "success\n";
 }

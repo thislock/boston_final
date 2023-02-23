@@ -214,6 +214,9 @@ IMAGE::IMAGE() {
 }
 
 IMAGE::~IMAGE() {
-	SDL_DestroyTexture(tex);
-	cout << "destroyed texture, " << filename << endl;
+	// makes sure the texture was accually set/works
+	if (tex != nullptr) {
+		SDL_DestroyTexture(tex);
+		cout << "destroyed texture, " << filename << endl;
+	}
 }

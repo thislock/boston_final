@@ -9,6 +9,7 @@ add_executable(spies_purgitory
 src/gameplay/heart/heart.cpp
 src/rendering/rendering.cpp
 src/gameplay/scout/scout.cpp
+src/gameplay/box/box.cpp
 
 main.cpp
 

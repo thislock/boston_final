@@ -16,6 +16,11 @@
 },
 {
   "directory": "/home/loch/vs_code/c++/boston_final/build",
+  "command": "/usr/bin/g++   -I/usr/include/SDL2  -g   -o CMakeFiles/spies_purgitory.dir/src/gameplay/box/box.cpp.o -c /home/loch/vs_code/c++/boston_final/src/gameplay/box/box.cpp",
+  "file": "/home/loch/vs_code/c++/boston_final/src/gameplay/box/box.cpp"
+},
+{
+  "directory": "/home/loch/vs_code/c++/boston_final/build",
   "command": "/usr/bin/g++   -I/usr/include/SDL2  -g   -o CMakeFiles/spies_purgitory.dir/main.cpp.o -c /home/loch/vs_code/c++/boston_final/main.cpp",
   "file": "/home/loch/vs_code/c++/boston_final/main.cpp"
 }

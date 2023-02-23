@@ -14,6 +14,9 @@ class HEART : public IMAGE {
   bool heartvel_right = false;
 
 public:
+  
+  // for setting the initial default texture
+  HEART(SDL_Renderer * renderer);
 
   int x=0, y=0;
 
