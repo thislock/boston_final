@@ -547,6 +547,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/spies_purgitory.dir/build.make CMakeFiles/spies_purgitory.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/features/collide.o: src/features/collide.cpp.o
+
+.PHONY : src/features/collide.o
+
+# target to build an object file
+src/features/collide.cpp.o:
+	$(MAKE) -f CMakeFiles/spies_purgitory.dir/build.make CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.o
+.PHONY : src/features/collide.cpp.o
+
+src/features/collide.i: src/features/collide.cpp.i
+
+.PHONY : src/features/collide.i
+
+# target to preprocess a source file
+src/features/collide.cpp.i:
+	$(MAKE) -f CMakeFiles/spies_purgitory.dir/build.make CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.i
+.PHONY : src/features/collide.cpp.i
+
+src/features/collide.s: src/features/collide.cpp.s
+
+.PHONY : src/features/collide.s
+
+# target to generate assembly for a file
+src/features/collide.cpp.s:
+	$(MAKE) -f CMakeFiles/spies_purgitory.dir/build.make CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.s
+.PHONY : src/features/collide.cpp.s
+
 src/gameplay/box/box.o: src/gameplay/box/box.cpp.o
 
 .PHONY : src/gameplay/box/box.o
@@ -698,6 +725,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/features/collide.o"
+	@echo "... src/features/collide.i"
+	@echo "... src/features/collide.s"
 	@echo "... src/gameplay/box/box.o"
 	@echo "... src/gameplay/box/box.i"
 	@echo "... src/gameplay/box/box.s"

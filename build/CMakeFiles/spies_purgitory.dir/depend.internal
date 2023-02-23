@@ -3,6 +3,7 @@
 
 CMakeFiles/spies_purgitory.dir/main.cpp.o
  /home/loch/vs_code/c++/boston_final/main.cpp
+ /home/loch/vs_code/c++/boston_final/src/features/collide.h
  /home/loch/vs_code/c++/boston_final/src/gameplay/box/box.h
  /home/loch/vs_code/c++/boston_final/src/gameplay/heart/heart.h
  /home/loch/vs_code/c++/boston_final/src/gameplay/scout/scout.h
@@ -52,6 +53,9 @@ CMakeFiles/spies_purgitory.dir/main.cpp.o
  /usr/include/SDL2/SDL_video.h
  /usr/include/SDL2/begin_code.h
  /usr/include/SDL2/close_code.h
+CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.o
+ /home/loch/vs_code/c++/boston_final/src/features/collide.cpp
+ /home/loch/vs_code/c++/boston_final/src/features/collide.h
 CMakeFiles/spies_purgitory.dir/src/gameplay/box/box.cpp.o
  /home/loch/vs_code/c++/boston_final/src/gameplay/box/box.cpp
  /home/loch/vs_code/c++/boston_final/src/gameplay/box/box.h
@@ -102,6 +106,7 @@ CMakeFiles/spies_purgitory.dir/src/gameplay/box/box.cpp.o
  /usr/include/SDL2/begin_code.h
  /usr/include/SDL2/close_code.h
 CMakeFiles/spies_purgitory.dir/src/gameplay/heart/heart.cpp.o
+ /home/loch/vs_code/c++/boston_final/src/features/collide.h
  /home/loch/vs_code/c++/boston_final/src/gameplay/heart/heart.cpp
  /home/loch/vs_code/c++/boston_final/src/gameplay/heart/heart.h
  /home/loch/vs_code/c++/boston_final/src/rendering/rendering.h

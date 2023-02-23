@@ -47,7 +47,7 @@ void IMAGE::renderResizedTexture(
 	// scale
 	int w, int h
 ) {
-	// just uses prior function for code simplicity
+	// just uses prior function for code size
 	renderResizedInputedTexture(
 		rend, win, tex,
 		x, y, 

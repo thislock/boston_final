@@ -18,11 +18,14 @@ public:
   // for setting the initial default texture
   HEART(SDL_Renderer * renderer);
 
-  int x=0, y=0;
+  int x=0, y=-50;
+  int width=4, height=5;
 
   void draw_heart(
     SDL_Renderer * renderer,
-    SDL_Window * window
+    SDL_Window * window,
+    int box_x, int box_y,
+    int box_width, int box_height
   );
 
   void query_keys_up(SDL_Event & event);

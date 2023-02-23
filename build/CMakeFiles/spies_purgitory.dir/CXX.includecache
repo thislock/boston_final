@@ -19,10 +19,22 @@ src/gameplay/scout/scout.h
 /home/loch/vs_code/c++/boston_final/src/gameplay/scout/scout.h
 src/gameplay/box/box.h
 /home/loch/vs_code/c++/boston_final/src/gameplay/box/box.h
+src/features/collide.h
+/home/loch/vs_code/c++/boston_final/src/features/collide.h
+
+/home/loch/vs_code/c++/boston_final/src/features/collide.h
 
 /home/loch/vs_code/c++/boston_final/src/gameplay/box/box.h
 ../../rendering/rendering.h
 /home/loch/vs_code/c++/boston_final/src/rendering/rendering.h
+
+/home/loch/vs_code/c++/boston_final/src/gameplay/heart/heart.cpp
+heart.h
+/home/loch/vs_code/c++/boston_final/src/gameplay/heart/heart.h
+../../features/collide.h
+/home/loch/vs_code/c++/boston_final/src/features/collide.h
+iostream
+-
 
 /home/loch/vs_code/c++/boston_final/src/gameplay/heart/heart.h
 ../../rendering/rendering.h

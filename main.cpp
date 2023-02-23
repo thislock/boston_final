@@ -7,6 +7,7 @@
 #include "src/gameplay/heart/heart.h"
 #include "src/gameplay/scout/scout.h"
 #include "src/gameplay/box/box.h"
+#include "src/features/collide.h"
 
 using std::unique_ptr;
 
@@ -35,6 +36,7 @@ int main(int, char**) {
   
 	// creates the undertale heart
 	unique_ptr<HEART> heart(new HEART(rend));
+
 	// creates the fighting box thing
 	unique_ptr<BOX> box(new BOX(rend));
 
@@ -78,7 +80,13 @@ int main(int, char**) {
 
 		// draws out new things to the buffer
 		scout->draw_scout(rend, win);
-		heart->draw_heart(rend, win);
+		heart->draw_heart(
+			// drawing surfaces
+			rend, win,
+			// for checking if your touching the edge of the box
+			box->box_x, box->box_y,
+  		box->box_width, box->box_height
+		);
 		box->draw_box(rend, win);
 
 

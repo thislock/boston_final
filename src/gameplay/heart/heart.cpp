@@ -1,4 +1,6 @@
+
 #include "heart.h"
+#include "../../features/collide.h"
 
 #include <iostream>
 
@@ -10,11 +12,15 @@ HEART::HEART(SDL_Renderer * rend) {
 // draws and moves the undertale heart
 void HEART::draw_heart(
   SDL_Renderer * rend,
-  SDL_Window * win
+  SDL_Window * win,
+	
+  int box_x, int box_y,
+  int box_width, int box_height
 ) {
+
   // moves the heart in the direction needed
   // right
-  if (heartvel_right)
+  if (heartvel_right && x + box_width < ) 
     x += heart_vel;
   // left
   if (heartvel_left)
@@ -29,7 +35,7 @@ void HEART::draw_heart(
   renderResizedTexture(
     rend, win,
     x, y,
-    4, 5
+    width, height
   );
 }
 
