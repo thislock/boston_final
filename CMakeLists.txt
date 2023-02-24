@@ -11,6 +11,7 @@ src/rendering/rendering.cpp
 src/gameplay/scout/scout.cpp
 src/gameplay/box/box.cpp
 src/features/collide.cpp
+src/rendering/font/font.cpp
 
 main.cpp
 
@@ -19,7 +20,6 @@ main.cpp
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
-
 
 
 find_package(SDL2 REQUIRED)

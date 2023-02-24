@@ -10,8 +10,21 @@ class SCOUT : public IMAGE {
 
   // default positions of the individual body parts
   int head_x=0, head_y=130;
-  int torso_x=5, torso_y=81;
+  int torso_x=5, torso_y=80;
   int legs_x=2, legs_y=37;
+
+  int animation_cycle;
+
+  int animate_type = 1;
+
+  int head_state = 0;
+
+  int animate_speed=0;
+
+  bool twos;
+  int twos_counter;
+
+  SDL_Texture * head_closed_eyes = nullptr;
 
 public:
 
@@ -25,7 +38,9 @@ public:
   SCOUT(SDL_Renderer * renderer);
 
   // default general pos's
-  int x=-4, y=0;
+  int x=-4, y=-5;
+
+  void animate();
 
   void draw_scout(SDL_Renderer * renderer, SDL_Window * window);
 

@@ -20,7 +20,7 @@ void HEART::draw_heart(
 
   // moves the heart in the direction needed
   // right
-  if (heartvel_right && x + box_width < ) 
+  if (heartvel_right) 
     x += heart_vel;
   // left
   if (heartvel_left)

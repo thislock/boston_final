@@ -2,20 +2,23 @@
 #include <iostream>
 #include <memory>
 
+#include <SDL.h>
+
 // my shitty code
 #include "src/rendering/rendering.h"
 #include "src/gameplay/heart/heart.h"
 #include "src/gameplay/scout/scout.h"
 #include "src/gameplay/box/box.h"
 #include "src/features/collide.h"
+#include "src/rendering/font/font.h"
 
 using std::unique_ptr;
 
-int main(int, char**) {
-  
+int main() {
 
   bool quit = false;
   SDL_Event event;
+
 
   SDL_Init(SDL_INIT_VIDEO);
 
@@ -26,6 +29,9 @@ int main(int, char**) {
     900, 550,
     SDL_WINDOW_SHOWN | SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE
   );
+
+	SDL_SetWindowMinimumSize(win, 400, 300);
+
 
   SDL_Renderer * rend = SDL_CreateRenderer(
     win, -1, 
@@ -40,8 +46,12 @@ int main(int, char**) {
 	// creates the fighting box thing
 	unique_ptr<BOX> box(new BOX(rend));
 
-  while(!quit) {
+	
+	unique_ptr<FONT> font(new FONT(rend));
 
+
+  while(!quit) {
+		
     // loops through all of the events until there are none left
 		for (; SDL_PollEvent(&event);) {
 			
@@ -69,14 +79,26 @@ int main(int, char**) {
 			}
 			
 			if (event.type == SDL_KEYUP) {
+
+				switch (event.key.keysym.sym){
+					case SDLK_F4:
+						SDL_SetWindowFullscreen(win, SDL_WINDOW_FULLSCREEN_DESKTOP);
+				
+					default:
+						break;
+				}
+
 				// handles all of the hearts key events
 				heart->query_keys_up(event);
 			}
 
     } // end of event checking
 
+		scout->animate();
+
 		// clears all textures stored on the buffer
 		SDL_RenderClear(rend);
+
 
 		// draws out new things to the buffer
 		scout->draw_scout(rend, win);
@@ -88,7 +110,6 @@ int main(int, char**) {
   		box->box_width, box->box_height
 		);
 		box->draw_box(rend, win);
-
 
 		// make sure the renderer's backround is black
 		SDL_SetRenderDrawColor(rend, 0, 0, 0, 255);

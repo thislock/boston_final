@@ -23,8 +23,6 @@ class IMAGE {
 
   string filename;
 
-  SDL_Rect clip;
-
 public:
 
   IMAGE();
@@ -56,6 +54,14 @@ public:
 
   void renderCutTexture(
     SDL_Renderer *renderer, 
+    int x, int y,
+    int width, int height,
+    int clippings[4]
+  );
+  
+  void renderCutResizedTexture(
+    SDL_Renderer *renderer, 
+    SDL_Window * window,
     int x, int y,
     int width, int height,
     int clippings[4]
