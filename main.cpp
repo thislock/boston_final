@@ -94,6 +94,7 @@ int main() {
 
     } // end of event checking
 
+		// handles all of the scout animations
 		scout->animate();
 
 		// clears all textures stored on the buffer
@@ -102,6 +103,7 @@ int main() {
 
 		// draws out new things to the buffer
 		scout->draw_scout(rend, win);
+		
 		heart->draw_heart(
 			// drawing surfaces
 			rend, win,

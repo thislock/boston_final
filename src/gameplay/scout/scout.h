@@ -9,7 +9,7 @@
 class SCOUT : public IMAGE {
 
   // default positions of the individual body parts
-  int head_x=0, head_y=130;
+  int head_x=0, head_y=127;
   int torso_x=5, torso_y=80;
   int legs_x=2, legs_y=37;
 
@@ -40,8 +40,10 @@ public:
   // default general pos's
   int x=-4, y=-5;
 
-  void animate();
+  // true for attacking, and false for your move, like items, or mercy ect.
+  bool scout_turn = true;
 
+  void animate();
   void draw_scout(SDL_Renderer * renderer, SDL_Window * window);
 
 };

@@ -10,7 +10,7 @@ void SCOUT::animate() {
   // lower numbers = faster
   // breathing tjing
   if (animate_type == 0)
-    animate_speed = 10;
+    animate_speed = 9;
   // normal - used most commonly
   if (animate_type == 1)
     animate_speed = 3;
@@ -29,74 +29,72 @@ void SCOUT::animate() {
     // the normal u-shaped animation
     if (animate_type == 1)
     switch (animation_cycle){
-    case 1:
-      torso_y++;
-      torso_x++;
-      break;
 
-    case 2:
-      torso_x++;
-      torso_y++;
-      head_x++;
-      head_y++;
-      break;
-    
-    case 3:
-      torso_y--;
-      head_x++;
-      head_y++;
-      break;
+      case 1:
+        torso_x++;
+        head_x++;
+        break;
+      
+      case 2:
+        torso_y++;
+        head_y++;
+        break;
+        
+      case 3:
+        torso_y++;
+        head_y++;
+        break;
 
-    case 4:
-      head_y--;
-      torso_x--;
-      break;
+      case 4:
+        torso_y--;
+        head_y--;
+        break;
+      
+      case 5:
+        torso_x--;
+        head_x--;
+        break;
 
-    case 5:
-      head_x--;
-      torso_y--;
-      torso_x--;
-      break;
-    
-    case 6:
-      head_x--;
-      head_y--;
-      torso_y++;
-      torso_x--;
-      break;
+      case 6:
+        torso_x--;
+        torso_y--;
+        head_x--;
+        head_y--;
+        break;
+      
+      case 7:
+        torso_x--;
+        head_x--;
+        break;
+      
+      case 8:
+        torso_y++;
+        head_y++;
+        break;
+        
+      case 9:
+        torso_y++;
+        head_y++;
+        break;
 
-    case 7:
-      head_y++;
-      head_x--;
-      torso_x--;
-      torso_y++;
-      break;
-    
-    case 8:
-      head_y++;
-      head_x--;
-      torso_y--;
-      break;
+      case 10:
+        torso_y--;
+        head_y--;
+        break;
+      
+      case 11:
+        torso_x++;
+        head_x++;
+        break;
+      
+			default:
+        torso_x++;
+        torso_y--;
+        head_x++;
+        head_y--;
+				animation_cycle = 0;
+				break;
 
-    case 9:
-      head_y--;
-      torso_x++;
-      break;
-
-    case 10:
-      head_x++;
-      head_y--;
-      torso_y--;
-      torso_x++;
-      break;
-    
-    case 11:
-      head_x++;
-      animation_cycle=0;
-      break;
-
-    default:
-      break;
     }// end of animation 1
 
     // the just up/down animation, for the start, or just staning there
@@ -145,8 +143,8 @@ void SCOUT::animate() {
       case 10: break;
 
       case 11:
-        head_y = 130;
-        torso_y = 80;
+        head_y = 128;
+        torso_y = 78;
       break;
 
       default:
@@ -211,8 +209,9 @@ SCOUT::SCOUT(SDL_Renderer * rend) {
   torso = returnTexture(rend, ASSETPATH"scout/torso.bmp");
   legs =  returnTexture(rend, ASSETPATH"scout/legs.bmp");
   // alternate states
-  head_closed_eyes =  returnTexture(rend, ASSETPATH"scout/alternate_parts/head-eyes_closed.bmp");
+  head_closed_eyes = returnTexture(rend, ASSETPATH"scout/alternate_parts/head_eyes_closed.bmp");
 }
+
 SCOUT::~SCOUT() {
   std::cout << "destroying scout elements... ";
   // main
