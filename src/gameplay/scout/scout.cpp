@@ -4,7 +4,6 @@
 
 void SCOUT::animate() {
 
-
   twos_counter++;
 
   // lower numbers = faster

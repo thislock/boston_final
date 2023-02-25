@@ -11,6 +11,7 @@
 #include "src/gameplay/box/box.h"
 #include "src/features/collide.h"
 #include "src/rendering/font/font.h"
+#include "src/gameplay/buttons/button.h"
 
 using std::unique_ptr;
 
@@ -45,7 +46,8 @@ int main() {
 
 	// creates the fighting box thing
 	unique_ptr<BOX> box(new BOX(rend));
-
+	// creates the button instance
+	unique_ptr<BUTTON> buttons(new BUTTON(rend));
 	
 	unique_ptr<FONT> font(new FONT(rend));
 
@@ -80,6 +82,8 @@ int main() {
 			
 			if (event.type == SDL_KEYUP) {
 
+				buttons->query_keys(event, scout->scout_turn);
+
 				switch (event.key.keysym.sym){
 					case SDLK_F4:
 						SDL_SetWindowFullscreen(win, SDL_WINDOW_FULLSCREEN_DESKTOP);
@@ -100,10 +104,17 @@ int main() {
 		// clears all textures stored on the buffer
 		SDL_RenderClear(rend);
 
+		// draws the buttons
+		buttons->draw_buttons(
+			rend, win,
+			box->box_y, box->box_height
+		);
 
 		// draws out new things to the buffer
 		scout->draw_scout(rend, win);
-		
+
+		// if it's not your turn, draw and animate the heart
+		if (scout->scout_turn)
 		heart->draw_heart(
 			// drawing surfaces
 			rend, win,

@@ -41,7 +41,8 @@ public:
   int x=-4, y=-5;
 
   // true for attacking, and false for your move, like items, or mercy ect.
-  bool scout_turn = true;
+  // starts off attacking
+  bool scout_turn = false;
 
   void animate();
   void draw_scout(SDL_Renderer * renderer, SDL_Window * window);

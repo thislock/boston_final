@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/spies_purgitory.dir/main.cpp.o"
   "CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.o"
   "CMakeFiles/spies_purgitory.dir/src/gameplay/box/box.cpp.o"
+  "CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.o"
   "CMakeFiles/spies_purgitory.dir/src/gameplay/heart/heart.cpp.o"
   "CMakeFiles/spies_purgitory.dir/src/gameplay/scout/scout.cpp.o"
   "CMakeFiles/spies_purgitory.dir/src/rendering/font/font.cpp.o"

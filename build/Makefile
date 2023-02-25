@@ -601,6 +601,33 @@ src/gameplay/box/box.cpp.s:
 	$(MAKE) -f CMakeFiles/spies_purgitory.dir/build.make CMakeFiles/spies_purgitory.dir/src/gameplay/box/box.cpp.s
 .PHONY : src/gameplay/box/box.cpp.s
 
+src/gameplay/buttons/button.o: src/gameplay/buttons/button.cpp.o
+
+.PHONY : src/gameplay/buttons/button.o
+
+# target to build an object file
+src/gameplay/buttons/button.cpp.o:
+	$(MAKE) -f CMakeFiles/spies_purgitory.dir/build.make CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.o
+.PHONY : src/gameplay/buttons/button.cpp.o
+
+src/gameplay/buttons/button.i: src/gameplay/buttons/button.cpp.i
+
+.PHONY : src/gameplay/buttons/button.i
+
+# target to preprocess a source file
+src/gameplay/buttons/button.cpp.i:
+	$(MAKE) -f CMakeFiles/spies_purgitory.dir/build.make CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.i
+.PHONY : src/gameplay/buttons/button.cpp.i
+
+src/gameplay/buttons/button.s: src/gameplay/buttons/button.cpp.s
+
+.PHONY : src/gameplay/buttons/button.s
+
+# target to generate assembly for a file
+src/gameplay/buttons/button.cpp.s:
+	$(MAKE) -f CMakeFiles/spies_purgitory.dir/build.make CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.s
+.PHONY : src/gameplay/buttons/button.cpp.s
+
 src/gameplay/heart/heart.o: src/gameplay/heart/heart.cpp.o
 
 .PHONY : src/gameplay/heart/heart.o
@@ -758,6 +785,9 @@ help:
 	@echo "... src/gameplay/box/box.o"
 	@echo "... src/gameplay/box/box.i"
 	@echo "... src/gameplay/box/box.s"
+	@echo "... src/gameplay/buttons/button.o"
+	@echo "... src/gameplay/buttons/button.i"
+	@echo "... src/gameplay/buttons/button.s"
 	@echo "... src/gameplay/heart/heart.o"
 	@echo "... src/gameplay/heart/heart.i"
 	@echo "... src/gameplay/heart/heart.s"

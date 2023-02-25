@@ -109,9 +109,22 @@ CMakeFiles/spies_purgitory.dir/src/gameplay/box/box.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spies_purgitory.dir/src/gameplay/box/box.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/loch/vs_code/c++/boston_final/src/gameplay/box/box.cpp -o CMakeFiles/spies_purgitory.dir/src/gameplay/box/box.cpp.s
 
+CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.o: CMakeFiles/spies_purgitory.dir/flags.make
+CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.o: ../src/gameplay/buttons/button.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/loch/vs_code/c++/boston_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.o -c /home/loch/vs_code/c++/boston_final/src/gameplay/buttons/button.cpp
+
+CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/loch/vs_code/c++/boston_final/src/gameplay/buttons/button.cpp > CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.i
+
+CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/loch/vs_code/c++/boston_final/src/gameplay/buttons/button.cpp -o CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.s
+
 CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.o: CMakeFiles/spies_purgitory.dir/flags.make
 CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.o: ../src/features/collide.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/loch/vs_code/c++/boston_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/loch/vs_code/c++/boston_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.o -c /home/loch/vs_code/c++/boston_final/src/features/collide.cpp
 
 CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.s: cmake_force
 
 CMakeFiles/spies_purgitory.dir/src/rendering/font/font.cpp.o: CMakeFiles/spies_purgitory.dir/flags.make
 CMakeFiles/spies_purgitory.dir/src/rendering/font/font.cpp.o: ../src/rendering/font/font.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/loch/vs_code/c++/boston_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/spies_purgitory.dir/src/rendering/font/font.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/loch/vs_code/c++/boston_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/spies_purgitory.dir/src/rendering/font/font.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spies_purgitory.dir/src/rendering/font/font.cpp.o -c /home/loch/vs_code/c++/boston_final/src/rendering/font/font.cpp
 
 CMakeFiles/spies_purgitory.dir/src/rendering/font/font.cpp.i: cmake_force
@@ -137,7 +150,7 @@ CMakeFiles/spies_purgitory.dir/src/rendering/font/font.cpp.s: cmake_force
 
 CMakeFiles/spies_purgitory.dir/main.cpp.o: CMakeFiles/spies_purgitory.dir/flags.make
 CMakeFiles/spies_purgitory.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/loch/vs_code/c++/boston_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/spies_purgitory.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/loch/vs_code/c++/boston_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/spies_purgitory.dir/main.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spies_purgitory.dir/main.cpp.o -c /home/loch/vs_code/c++/boston_final/main.cpp
 
 CMakeFiles/spies_purgitory.dir/main.cpp.i: cmake_force
@@ -154,6 +167,7 @@ spies_purgitory_OBJECTS = \
 "CMakeFiles/spies_purgitory.dir/src/rendering/rendering.cpp.o" \
 "CMakeFiles/spies_purgitory.dir/src/gameplay/scout/scout.cpp.o" \
 "CMakeFiles/spies_purgitory.dir/src/gameplay/box/box.cpp.o" \
+"CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.o" \
 "CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.o" \
 "CMakeFiles/spies_purgitory.dir/src/rendering/font/font.cpp.o" \
 "CMakeFiles/spies_purgitory.dir/main.cpp.o"
@@ -165,12 +179,13 @@ spies_purgitory: CMakeFiles/spies_purgitory.dir/src/gameplay/heart/heart.cpp.o
 spies_purgitory: CMakeFiles/spies_purgitory.dir/src/rendering/rendering.cpp.o
 spies_purgitory: CMakeFiles/spies_purgitory.dir/src/gameplay/scout/scout.cpp.o
 spies_purgitory: CMakeFiles/spies_purgitory.dir/src/gameplay/box/box.cpp.o
+spies_purgitory: CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.o
 spies_purgitory: CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.o
 spies_purgitory: CMakeFiles/spies_purgitory.dir/src/rendering/font/font.cpp.o
 spies_purgitory: CMakeFiles/spies_purgitory.dir/main.cpp.o
 spies_purgitory: CMakeFiles/spies_purgitory.dir/build.make
 spies_purgitory: CMakeFiles/spies_purgitory.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/loch/vs_code/c++/boston_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable spies_purgitory"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/loch/vs_code/c++/boston_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable spies_purgitory"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/spies_purgitory.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

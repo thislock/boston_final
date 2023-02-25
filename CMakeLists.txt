@@ -10,6 +10,7 @@ src/gameplay/heart/heart.cpp
 src/rendering/rendering.cpp
 src/gameplay/scout/scout.cpp
 src/gameplay/box/box.cpp
+src/gameplay/buttons/button.cpp
 src/features/collide.cpp
 src/rendering/font/font.cpp
 
