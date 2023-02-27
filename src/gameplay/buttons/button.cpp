@@ -1,14 +1,32 @@
 
 #include "button.h"
 
+#include <time.h>
+
 #include <SDL.h>
 
 #include <iostream>
 
-void BUTTON::query_keys(SDL_Event & event, int turn) {
+#include <stdlib.h>
+
+static bool qk_init = true;
+void BUTTON::query_keys(
+  // events
+  SDL_Event & event, 
+  // who's turn it is
+  bool turn,
+  // for changing the damage bar
+  int & damage_bar_slider_x,
+  bool & db_slider_direction
+) {
+  // when the loop is first called
+  if (qk_init) {
+    srand(time(NULL));
+    qk_init = false;
+  }
 
   // sets the button selected if it is your turn
-  if (!turn)
+  if (!turn && !in_menu)
   switch (event.key.keysym.sym){
   case SDLK_RIGHT:
     if (button_selected == 4)
@@ -27,13 +45,68 @@ void BUTTON::query_keys(SDL_Event & event, int turn) {
   default:
     break;
   }
+  // handles submenu's
+  if (in_menu)
+  switch (event.key.keysym.sym) {
 
+    // changes the layer of selection
+    case SDLK_z:
+      button_layer++;
+      break;
+
+    // horazontal movement
+    // right
+    case SDLK_RIGHT:
+      submenu_selected_hor++;
+      break;
+    // left
+    case SDLK_LEFT:
+      submenu_selected_hor--;
+      break;
+    // vertical movement
+    // up
+    case SDLK_UP:
+      submenu_selected_vert++;
+      break;
+    // down
+    case SDLK_DOWN:
+      submenu_selected_vert--;
+      break;
+
+    // if all that isn't true
+    default:
+      break;
+  }
+  
+
+  // resets the texture of the buffer
   fight_buffer = fight;
   act_buffer   = act;
   item_buffer  = item;
   mercy_buffer = mercy;
 
-  // sets the right texture
+  // handles when you press the z key
+  if (event.key.keysym.sym == SDLK_z && !in_menu) {
+    // sets the button currently pressed to the one your selecting
+    button_pressed = button_selected;
+    in_menu=true;
+    // sets random position for the damage bar each time
+    if (rand()%2 == 1) {
+      db_slider_direction = true;
+      damage_bar_slider_x = -100;
+    } else {
+      damage_bar_slider_x = 100;
+      db_slider_direction = false;
+    }
+    // else if the x key is pressed
+  } else if (event.key.keysym.sym == SDLK_x) {
+    in_menu = false;
+    button_pressed = 0;
+    button_layer = 0;
+  }
+
+  // sets the right texture for the buttons if your not in the menu of one
+  if (!in_menu)
   switch (button_selected) {
     case 1:
       fight_buffer = fight_sel;
@@ -52,6 +125,7 @@ void BUTTON::query_keys(SDL_Event & event, int turn) {
       break;
 
   }
+
 
 }
 
@@ -102,6 +176,7 @@ BUTTON::BUTTON(SDL_Renderer * rend) {
 }
 
 BUTTON::~BUTTON() {
+  // destroys all of the button textures
   std::cout << "destroying button textures... ";
   SDL_DestroyTexture(act);
   SDL_DestroyTexture(act_sel);

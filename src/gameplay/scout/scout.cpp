@@ -4,6 +4,38 @@
 
 void SCOUT::animate() {
 
+  // code for the scout dodge animation
+  if (scout_dodge) {
+    
+    dodge_cycle++;
+
+    // velocity changes
+    if (dodge_cycle == 1)
+      dodge_vel = -1;
+
+    if (dodge_cycle == 5)
+      dodge_vel = -2;
+    
+    if (dodge_cycle == 10)
+      dodge_vel = -3;
+    
+    if (dodge_cycle == 21)
+      dodge_vel = 3;
+
+    if (dodge_cycle == 35)
+      dodge_vel = 1;
+    
+    // pos change
+    x -= dodge_vel;
+
+    // end code
+    if (x == -4) {
+      scout_dodge=false;
+      dodge_cycle=0;
+    }
+    
+  } // end dodge animation
+
   twos_counter++;
 
   // lower numbers = faster

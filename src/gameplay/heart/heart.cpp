@@ -18,9 +18,9 @@ void HEART::draw_heart(
   int box_width, int box_height
 ) {
 
-  // moves the heart in the direction needed
+  // moves the heart in the direction needed if your not touching the box
   // right
-  if (heartvel_right) 
+  if (heartvel_right && x <= (box_x + box_width / 2) + width / 2) 
     x += heart_vel;
   // left
   if (heartvel_left)

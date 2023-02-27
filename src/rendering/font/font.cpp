@@ -160,3 +160,23 @@ void FONT::letter_seq(
     );
   }
 }
+
+
+void FONT::color_set(
+  int set
+) {
+  switch (set) {
+    // sets the color to yellow
+    case 1:
+      // if it isn't already the yellow font
+      if (tex != font_yellow)
+      tex = font_yellow;
+      break;
+    // by default, sets the color to white
+    default:
+      // if it isn't already the default font
+      if (tex != font_default)
+      tex = font_default;
+      break;
+  }
+}

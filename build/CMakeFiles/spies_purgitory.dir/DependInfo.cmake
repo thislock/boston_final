@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/loch/vs_code/c++/boston_final/main.cpp" "/home/loch/vs_code/c++/boston_final/build/CMakeFiles/spies_purgitory.dir/main.cpp.o"
   "/home/loch/vs_code/c++/boston_final/src/features/collide.cpp" "/home/loch/vs_code/c++/boston_final/build/CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.o"
   "/home/loch/vs_code/c++/boston_final/src/gameplay/box/box.cpp" "/home/loch/vs_code/c++/boston_final/build/CMakeFiles/spies_purgitory.dir/src/gameplay/box/box.cpp.o"
+  "/home/loch/vs_code/c++/boston_final/src/gameplay/box/box_text.cpp" "/home/loch/vs_code/c++/boston_final/build/CMakeFiles/spies_purgitory.dir/src/gameplay/box/box_text.cpp.o"
   "/home/loch/vs_code/c++/boston_final/src/gameplay/buttons/button.cpp" "/home/loch/vs_code/c++/boston_final/build/CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.o"
   "/home/loch/vs_code/c++/boston_final/src/gameplay/heart/heart.cpp" "/home/loch/vs_code/c++/boston_final/build/CMakeFiles/spies_purgitory.dir/src/gameplay/heart/heart.cpp.o"
   "/home/loch/vs_code/c++/boston_final/src/gameplay/scout/scout.cpp" "/home/loch/vs_code/c++/boston_final/build/CMakeFiles/spies_purgitory.dir/src/gameplay/scout/scout.cpp.o"

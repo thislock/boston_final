@@ -51,6 +51,8 @@ int main() {
 	
 	unique_ptr<FONT> font(new FONT(rend));
 
+	// when any turn is ended
+	bool end_turn = false;
 
   while(!quit) {
 		
@@ -75,6 +77,15 @@ int main() {
 				heart->query_keys_down(event);
 			
 				switch (event.key.keysym.sym){
+					case SDLK_a:
+					
+						box->box_width--;
+						break;
+
+					case SDLK_d:
+						box->box_width++;
+						break;
+
 					default:
 						break;
 				}
@@ -82,7 +93,10 @@ int main() {
 			
 			if (event.type == SDL_KEYUP) {
 
-				buttons->query_keys(event, scout->scout_turn);
+				buttons->query_keys(
+					event, scout->scout_turn,
+					box->damage_bar_slider_x, box->db_slider_direction
+				);
 
 				switch (event.key.keysym.sym){
 					case SDLK_F4:
@@ -98,6 +112,18 @@ int main() {
 
     } // end of event checking
 
+		// when any turn ends
+		if (end_turn) {
+			buttons->button_layer = 0;
+			// reverses the turn
+			if (scout->scout_turn)
+				scout->scout_turn = false;
+			else
+				scout->scout_turn = true;
+			// end 
+			end_turn = false;
+		}
+
 		// handles all of the scout animations
 		scout->animate();
 
@@ -108,6 +134,16 @@ int main() {
 		buttons->draw_buttons(
 			rend, win,
 			box->box_y, box->box_height
+		);
+
+		// draws the box text and submenu's if it's your turn
+		if (!scout->scout_turn)
+		box->box_menu(
+			rend, win, 
+			buttons->button_pressed, 
+			buttons->button_layer,
+			end_turn,
+			scout->scout_dodge
 		);
 
 		// draws out new things to the buffer
@@ -122,6 +158,7 @@ int main() {
 			box->box_x, box->box_y,
   		box->box_width, box->box_height
 		);
+
 		box->draw_box(rend, win);
 
 		// make sure the renderer's backround is black

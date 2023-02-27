@@ -21,6 +21,11 @@
 },
 {
   "directory": "/home/loch/vs_code/c++/boston_final/build",
+  "command": "/usr/bin/g++   -I/usr/include/SDL2  -g   -o CMakeFiles/spies_purgitory.dir/src/gameplay/box/box_text.cpp.o -c /home/loch/vs_code/c++/boston_final/src/gameplay/box/box_text.cpp",
+  "file": "/home/loch/vs_code/c++/boston_final/src/gameplay/box/box_text.cpp"
+},
+{
+  "directory": "/home/loch/vs_code/c++/boston_final/build",
   "command": "/usr/bin/g++   -I/usr/include/SDL2  -g   -o CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.o -c /home/loch/vs_code/c++/boston_final/src/gameplay/buttons/button.cpp",
   "file": "/home/loch/vs_code/c++/boston_final/src/gameplay/buttons/button.cpp"
 },
