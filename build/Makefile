@@ -574,6 +574,60 @@ src/features/collide.cpp.s:
 	$(MAKE) -f CMakeFiles/spies_purgitory.dir/build.make CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.s
 .PHONY : src/features/collide.cpp.s
 
+src/gameplay/attacks/attack.o: src/gameplay/attacks/attack.cpp.o
+
+.PHONY : src/gameplay/attacks/attack.o
+
+# target to build an object file
+src/gameplay/attacks/attack.cpp.o:
+	$(MAKE) -f CMakeFiles/spies_purgitory.dir/build.make CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attack.cpp.o
+.PHONY : src/gameplay/attacks/attack.cpp.o
+
+src/gameplay/attacks/attack.i: src/gameplay/attacks/attack.cpp.i
+
+.PHONY : src/gameplay/attacks/attack.i
+
+# target to preprocess a source file
+src/gameplay/attacks/attack.cpp.i:
+	$(MAKE) -f CMakeFiles/spies_purgitory.dir/build.make CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attack.cpp.i
+.PHONY : src/gameplay/attacks/attack.cpp.i
+
+src/gameplay/attacks/attack.s: src/gameplay/attacks/attack.cpp.s
+
+.PHONY : src/gameplay/attacks/attack.s
+
+# target to generate assembly for a file
+src/gameplay/attacks/attack.cpp.s:
+	$(MAKE) -f CMakeFiles/spies_purgitory.dir/build.make CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attack.cpp.s
+.PHONY : src/gameplay/attacks/attack.cpp.s
+
+src/gameplay/attacks/attacks.o: src/gameplay/attacks/attacks.cpp.o
+
+.PHONY : src/gameplay/attacks/attacks.o
+
+# target to build an object file
+src/gameplay/attacks/attacks.cpp.o:
+	$(MAKE) -f CMakeFiles/spies_purgitory.dir/build.make CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attacks.cpp.o
+.PHONY : src/gameplay/attacks/attacks.cpp.o
+
+src/gameplay/attacks/attacks.i: src/gameplay/attacks/attacks.cpp.i
+
+.PHONY : src/gameplay/attacks/attacks.i
+
+# target to preprocess a source file
+src/gameplay/attacks/attacks.cpp.i:
+	$(MAKE) -f CMakeFiles/spies_purgitory.dir/build.make CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attacks.cpp.i
+.PHONY : src/gameplay/attacks/attacks.cpp.i
+
+src/gameplay/attacks/attacks.s: src/gameplay/attacks/attacks.cpp.s
+
+.PHONY : src/gameplay/attacks/attacks.s
+
+# target to generate assembly for a file
+src/gameplay/attacks/attacks.cpp.s:
+	$(MAKE) -f CMakeFiles/spies_purgitory.dir/build.make CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attacks.cpp.s
+.PHONY : src/gameplay/attacks/attacks.cpp.s
+
 src/gameplay/box/box.o: src/gameplay/box/box.cpp.o
 
 .PHONY : src/gameplay/box/box.o
@@ -809,6 +863,12 @@ help:
 	@echo "... src/features/collide.o"
 	@echo "... src/features/collide.i"
 	@echo "... src/features/collide.s"
+	@echo "... src/gameplay/attacks/attack.o"
+	@echo "... src/gameplay/attacks/attack.i"
+	@echo "... src/gameplay/attacks/attack.s"
+	@echo "... src/gameplay/attacks/attacks.o"
+	@echo "... src/gameplay/attacks/attacks.i"
+	@echo "... src/gameplay/attacks/attacks.s"
 	@echo "... src/gameplay/box/box.o"
 	@echo "... src/gameplay/box/box.i"
 	@echo "... src/gameplay/box/box.s"

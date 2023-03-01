@@ -90,6 +90,15 @@ void renderResizedInputedTexture(
   int width, int height
 );
 
+void renderCutResizedInputedTexture(
+	SDL_Renderer * renderer, 
+	SDL_Window * win,
+	SDL_Texture * tex,
+  int x, int y,
+	int width, int height,
+	int clippings[4]
+);
+
 void renderScaledInputedTexture(
   SDL_Renderer *renderer, 
   SDL_Texture * texture, 

@@ -25,6 +25,7 @@ static string text_buffer2 = "";
 // for first time declaration
 static bool init_bm = true;
 // all of the approriet text draw to the screen when the buttons are pressed
+// if you didn't know, the & on some of these means they are passed by referance, so you can modify the variable passed in and have the original var in main affected
 void BOX::box_menu(
   SDL_Renderer * rend, 
   SDL_Window * win,
@@ -35,9 +36,11 @@ void BOX::box_menu(
   // for changing the scout's turn when needed
   bool & end_turn,
   // for when you attack
-  bool & scout_dodge
+  bool & scout_dodge,
+  // how many times you have attacked
+  int & attacking_turns
 ) {
-  // declares things that need the renderer to be declared
+  // declares things that need the renderer
   if(init_bm) {
     font->init(rend);
     damage_bar->setTexture(rend, ASSETPATH"attacks/damage_bar.bmp");
@@ -59,21 +62,28 @@ void BOX::box_menu(
       if (level == 2) {
         end_turn = true;
         scout_dodge = true;
+        // adds to the amount of turns you have attacked
+        attacking_turns++;
+        // exit case 1
         break;
       }
 
       // if the z key is pressed during this
       if (level == 1) {
-        damage_bar->renderResizedTexture(
+        // the attack thing
+        damage_bar->renderCutResizedTexture(
           rend, win,
           box_x, box_y,
-          box_width, box_height
+          box_width, box_height,
+          attack_thing_clips
         );
+        // the thing that moves across it
         damage_bar_slider->renderResizedTexture(
           rend, win,
           damage_bar_slider_x, box_y,
           7, 50
         );
+        // depending on witch direction the damage bar is moving
         if (db_slider_direction) {
           // if it isn't beyond the box's size
           if (damage_bar_slider_x < 100)
@@ -96,8 +106,8 @@ void BOX::box_menu(
       // set's the color to yellow
       font->color_set(1);
       // if the layer is 1, draw the text
-      // 10% chance to say "son" instead of "scout" 
-      if (rand() % 10 == 5) {
+      // 5% chance to say "son" instead of "scout" 
+      if (rand() % 20 == 5) {
         // sets the color to white
         font->color_set(0);
         text_buffer1 = "* son"; 

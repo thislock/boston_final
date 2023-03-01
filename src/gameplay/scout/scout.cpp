@@ -58,7 +58,7 @@ void SCOUT::animate() {
     animation_cycle++;
 
     // the normal u-shaped animation
-    if (animate_type == 1)
+    if (animate_type == 1) {
     switch (animation_cycle){
 
       case 1:
@@ -123,10 +123,10 @@ void SCOUT::animate() {
         torso_y--;
         head_x++;
         head_y--;
-				animation_cycle = 0;
+        animation_cycle = 0;
 				break;
 
-    }// end of animation 1
+    }}// end of animation 1
 
     // the just up/down animation, for the start, or just staning there
     if (animate_type == 0)
@@ -198,7 +198,7 @@ void SCOUT::draw_scout(SDL_Renderer * rend, SDL_Window * win) {
     legs,
     // pos and scale
     x + legs_x, y + legs_y,
-    38, 60
+    38, legs_height
   );
   
   renderResizedInputedTexture(

@@ -1,0 +1,14 @@
+
+attack1
+
+draw test1
+
+for_second 1,4
+move_right test1, 1
+end
+
+touching_heart test1
+damage_heart 1
+end
+
+end_attack

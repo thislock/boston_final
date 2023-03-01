@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/spies_purgitory.dir/main.cpp.o"
   "CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.o"
+  "CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attack.cpp.o"
+  "CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attacks.cpp.o"
   "CMakeFiles/spies_purgitory.dir/src/gameplay/box/box.cpp.o"
   "CMakeFiles/spies_purgitory.dir/src/gameplay/box/box_text.cpp.o"
   "CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.o"

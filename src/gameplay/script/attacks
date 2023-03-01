@@ -1,0 +1,59 @@
+attack1
+
+draw test1
+draw test2
+draw test3
+draw test4
+
+move_right test1, 20
+for_second 2,2
+end
+
+for_second 3,3
+move_right test4, 20
+end
+
+for_second 4,4
+move_right test2, 20
+end
+
+for_millisecond 0,0
+end_turn
+end
+
+for_second 5,5
+move_right test5, 20
+end
+
+for_second 6,6
+move_right test3, 20
+end
+
+for_second 7,7
+end_turn
+end
+
+draw test5
+
+touching_heart test1
+damage_heart 2
+end
+
+touching_heart test2
+damage_heart 2
+end
+
+touching_heart test3
+damage_heart 2
+end
+
+touching_heart test4
+damage_heart 2
+end
+
+touching_heart test5
+damage_heart 2
+end
+
+
+end_attack

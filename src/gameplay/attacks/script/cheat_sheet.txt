@@ -1,0 +1,15 @@
+images: when placed in images, add a name like so: "new_attack NAME_FOR_ATTACK, (WIDTH_OF_IMAGE, HIEGHT_OF_IMAGE)" 
+        (requires a corresponding img_attack counterpart)
+
+init: when placed in init file, pass in the same name you 
+      used for any of the new_attack files, along with the filepath of the image after.
+      EXAMPLE "declare_attack ATTACK_NAME, FILEPATH/IMAGE.bmp"
+      (image must be put in assets folder)
+            
+attacks: where all the main proccessing goes,
+         attack: use this keyword for what goes on in an attack,
+         EXAMPLE: "attack1
+                  CODE CODE
+                  end_attack"
+            make sure to end with end_attack
+            (attacks dont have to be placed in order)

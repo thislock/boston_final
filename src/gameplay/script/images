@@ -1,0 +1,5 @@
+new_attack test1, (15, 15)
+new_attack test2, (15, 15)
+new_attack test3, (15, 15)
+new_attack test4, (15, 15)
+new_attack test5, (15, 15)

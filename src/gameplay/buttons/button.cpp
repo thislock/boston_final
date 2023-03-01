@@ -99,7 +99,7 @@ void BUTTON::query_keys(
       db_slider_direction = false;
     }
     // else if the x key is pressed
-  } else if (event.key.keysym.sym == SDLK_x) {
+  } else if (event.key.keysym.sym == SDLK_x && !turn) {
     in_menu = false;
     button_pressed = 0;
     button_layer = 0;

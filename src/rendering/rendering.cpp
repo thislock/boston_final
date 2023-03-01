@@ -116,6 +116,43 @@ void IMAGE::renderCutResizedTexture(
 	);
 }
 
+void renderCutResizedInputedTexture(
+	SDL_Renderer * renderer, 
+	SDL_Window * win,
+	SDL_Texture * tex,
+  int x, int y,
+	int width, int height,
+	int clippings[4]
+) {
+
+	SDL_Rect clip;
+
+	int resized_width, resized_height;
+	SDL_GetWindowSize(win, &resized_width, &resized_height);
+	
+	clip.x = clippings[0];
+	clip.y = clippings[1];
+	clip.w = clippings[2];
+	clip.h = clippings[3];
+	
+	y *= -1;
+
+	// centers the rendering point
+	width = (width * 1000) / (ASPECT_RATIO_HORAZONTAL / resized_width);
+	height = (height * 1000) / (ASPECT_RATIO_VERTICAL   / resized_height);
+
+	// math to convert the position into a 400 by 300 graph
+	x = (x * 1000) / (ASPECT_RATIO_HORAZONTAL / resized_width) + (resized_width/2)  - (width / 2);
+	y = (y * 1000) / (ASPECT_RATIO_VERTICAL   / resized_height)+ (resized_height/2) - (height / 2);
+	
+	butFix(
+		renderer, tex,
+		x, y,
+		width, height,
+		&clip
+	);
+}
+
 void IMAGE::renderCutTexture(
 	SDL_Renderer * renderer, 
   int x, int y,

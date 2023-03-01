@@ -6,6 +6,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/loch/vs_code/c++/boston_final/main.cpp" "/home/loch/vs_code/c++/boston_final/build/CMakeFiles/spies_purgitory.dir/main.cpp.o"
   "/home/loch/vs_code/c++/boston_final/src/features/collide.cpp" "/home/loch/vs_code/c++/boston_final/build/CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.o"
+  "/home/loch/vs_code/c++/boston_final/src/gameplay/attacks/attack.cpp" "/home/loch/vs_code/c++/boston_final/build/CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attack.cpp.o"
+  "/home/loch/vs_code/c++/boston_final/src/gameplay/attacks/attacks.cpp" "/home/loch/vs_code/c++/boston_final/build/CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attacks.cpp.o"
   "/home/loch/vs_code/c++/boston_final/src/gameplay/box/box.cpp" "/home/loch/vs_code/c++/boston_final/build/CMakeFiles/spies_purgitory.dir/src/gameplay/box/box.cpp.o"
   "/home/loch/vs_code/c++/boston_final/src/gameplay/box/box_text.cpp" "/home/loch/vs_code/c++/boston_final/build/CMakeFiles/spies_purgitory.dir/src/gameplay/box/box_text.cpp.o"
   "/home/loch/vs_code/c++/boston_final/src/gameplay/buttons/button.cpp" "/home/loch/vs_code/c++/boston_final/build/CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.o"

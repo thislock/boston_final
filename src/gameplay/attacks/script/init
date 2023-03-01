@@ -1,0 +1,27 @@
+declare_attack test1, attacks/cleaver.bmp
+declare_attack test2, attacks/cleaver.bmp
+declare_attack test3, attacks/cleaver.bmp
+declare_attack test4, attacks/cleaver.bmp
+declare_attack test5, attacks/cleaver.bmp
+
+init_x test1, 0
+init_y test1, -60
+
+init_width test1, 30
+init_height test1, 30
+
+init_x test2, 0
+init_y test2, 0
+
+init_width test2,100
+init_height test2,100
+
+
+init_x test3, 0
+init_y test3, 0
+
+init_x test4, 0
+init_y test4, 0
+
+init_x test5, 0
+init_y test5, 0

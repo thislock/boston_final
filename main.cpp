@@ -1,7 +1,7 @@
 
+// include i guess
 #include <iostream>
 #include <memory>
-
 #include <SDL.h>
 
 // my shitty code
@@ -12,14 +12,17 @@
 #include "src/features/collide.h"
 #include "src/rendering/font/font.h"
 #include "src/gameplay/buttons/button.h"
+#include "src/gameplay/attacks/attack.h"
 
+
+// usings
 using std::unique_ptr;
 
+// main
 int main() {
-
+	// for when any quit type is called
   bool quit = false;
   SDL_Event event;
-
 
   SDL_Init(SDL_INIT_VIDEO);
 
@@ -31,14 +34,16 @@ int main() {
     SDL_WINDOW_SHOWN | SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE
   );
 
+	// fixes the issue where it crashes when the window gets too smol
 	SDL_SetWindowMinimumSize(win, 400, 300);
 
-
+	// rendering surface
   SDL_Renderer * rend = SDL_CreateRenderer(
-    win, -1, 
+    win, -1,
     SDL_RENDERER_ACCELERATED
   );
 
+	// scout class creation
 	unique_ptr<SCOUT> scout(new SCOUT(rend));
   
 	// creates the undertale heart
@@ -46,15 +51,26 @@ int main() {
 
 	// creates the fighting box thing
 	unique_ptr<BOX> box(new BOX(rend));
+
 	// creates the button instance
 	unique_ptr<BUTTON> buttons(new BUTTON(rend));
 	
+	// fonting
 	unique_ptr<FONT> font(new FONT(rend));
 
 	// when any turn is ended
 	bool end_turn = false;
 
+	// how many turns have passed
+	int turn_counter = 1;
+	// how many of those turns you have attacked
+	int turns_attacked = 0;
+
+	int hp = 90;
+
   while(!quit) {
+
+		std::cout << hp << '\n';
 		
     // loops through all of the events until there are none left
 		for (; SDL_PollEvent(&event);) {
@@ -78,7 +94,6 @@ int main() {
 			
 				switch (event.key.keysym.sym){
 					case SDLK_a:
-					
 						box->box_width--;
 						break;
 
@@ -93,11 +108,15 @@ int main() {
 			
 			if (event.type == SDL_KEYUP) {
 
+				// buttons keys processing
 				buttons->query_keys(
-					event, scout->scout_turn,
-					box->damage_bar_slider_x, box->db_slider_direction
+					event, 
+					scout->scout_turn,
+					box->damage_bar_slider_x, 
+					box->db_slider_direction
 				);
 
+				// fullscreen
 				switch (event.key.keysym.sym){
 					case SDLK_F4:
 						SDL_SetWindowFullscreen(win, SDL_WINDOW_FULLSCREEN_DESKTOP);
@@ -116,9 +135,12 @@ int main() {
 		if (end_turn) {
 			buttons->button_layer = 0;
 			// reverses the turn
-			if (scout->scout_turn)
+			if (scout->scout_turn) {
+				// adds to the amount of full turns that have passed
+				turn_counter++;
 				scout->scout_turn = false;
-			else
+			} else
+				// changes it to scouts turn
 				scout->scout_turn = true;
 			// end 
 			end_turn = false;
@@ -129,6 +151,9 @@ int main() {
 
 		// clears all textures stored on the buffer
 		SDL_RenderClear(rend);
+		
+		// draws the standard undertale-like attack box
+		box->draw_box(rend, win);
 
 		// draws the buttons
 		buttons->draw_buttons(
@@ -143,7 +168,8 @@ int main() {
 			buttons->button_pressed, 
 			buttons->button_layer,
 			end_turn,
-			scout->scout_dodge
+			scout->scout_dodge,
+			turns_attacked
 		);
 
 		// draws out new things to the buffer
@@ -159,7 +185,14 @@ int main() {
   		box->box_width, box->box_height
 		);
 
-		box->draw_box(rend, win);
+		attacks(
+			rend, win, 
+			heart->x, heart->y, 
+			heart->width, heart->height, 
+			turn_counter,
+			scout->scout_turn, 
+			hp
+		);
 
 		// make sure the renderer's backround is black
 		SDL_SetRenderDrawColor(rend, 0, 0, 0, 255);

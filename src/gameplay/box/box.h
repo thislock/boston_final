@@ -6,6 +6,11 @@
 
 class BOX : public IMAGE {
 
+  SDL_Texture * black_cover = nullptr;
+
+  int cover_clips[4] = {0, 0, 1, 1};
+  int attack_thing_clips[4] {10, 5, 170, 50};
+
 public:
 
   // data that can be modified to make the game more interesting
@@ -35,7 +40,9 @@ public:
     // for ending the turn when needed
     bool & end_turn, 
     // for when you attack
-    bool & scout_dodge
+    bool & scout_dodge,
+    // how many times you have attacked
+    int & attacking_turns
   );
 
 };

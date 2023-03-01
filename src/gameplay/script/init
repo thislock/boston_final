@@ -1,0 +1,20 @@
+declare_attack test1, attacks/cleaver.bmp
+declare_attack test2, attacks/cleaver.bmp
+declare_attack test3, attacks/cleaver.bmp
+declare_attack test4, attacks/cleaver.bmp
+declare_attack test5, attacks/cleaver.bmp
+
+init_x test1, 100
+init_y test1, (WIN_HEIGHT / 2) + WIN_HEIGHT / 13
+
+init_x test2, 100
+init_y test2, (WIN_HEIGHT / 2) + WIN_HEIGHT / 8
+
+init_x test3, 100
+init_y test3, (WIN_HEIGHT / 2) + WIN_HEIGHT / 6
+
+init_x test4, 100
+init_y test4, (WIN_HEIGHT / 2) + WIN_HEIGHT / 5
+
+init_x test5, 100
+init_y test5, (WIN_HEIGHT / 2) + WIN_HEIGHT / 4

@@ -17,12 +17,12 @@ class SCOUT : public IMAGE {
   int torso_x=5, torso_y=80;
   int legs_x=2, legs_y=37;
 
+  // for leg squooshing
+  int legs_height = 60;
+
   int animation_cycle;
-
-  int animate_type = 1;
-
+  int animate_type = 0;
   int head_state = 0;
-
   int animate_speed=0;
 
   bool twos;

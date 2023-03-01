@@ -161,9 +161,35 @@ CMakeFiles/spies_purgitory.dir/src/rendering/font/font.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spies_purgitory.dir/src/rendering/font/font.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/loch/vs_code/c++/boston_final/src/rendering/font/font.cpp -o CMakeFiles/spies_purgitory.dir/src/rendering/font/font.cpp.s
 
+CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attack.cpp.o: CMakeFiles/spies_purgitory.dir/flags.make
+CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attack.cpp.o: ../src/gameplay/attacks/attack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/loch/vs_code/c++/boston_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attack.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attack.cpp.o -c /home/loch/vs_code/c++/boston_final/src/gameplay/attacks/attack.cpp
+
+CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attack.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/loch/vs_code/c++/boston_final/src/gameplay/attacks/attack.cpp > CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attack.cpp.i
+
+CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attack.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/loch/vs_code/c++/boston_final/src/gameplay/attacks/attack.cpp -o CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attack.cpp.s
+
+CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attacks.cpp.o: CMakeFiles/spies_purgitory.dir/flags.make
+CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attacks.cpp.o: ../src/gameplay/attacks/attacks.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/loch/vs_code/c++/boston_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attacks.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attacks.cpp.o -c /home/loch/vs_code/c++/boston_final/src/gameplay/attacks/attacks.cpp
+
+CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attacks.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attacks.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/loch/vs_code/c++/boston_final/src/gameplay/attacks/attacks.cpp > CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attacks.cpp.i
+
+CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attacks.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attacks.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/loch/vs_code/c++/boston_final/src/gameplay/attacks/attacks.cpp -o CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attacks.cpp.s
+
 CMakeFiles/spies_purgitory.dir/main.cpp.o: CMakeFiles/spies_purgitory.dir/flags.make
 CMakeFiles/spies_purgitory.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/loch/vs_code/c++/boston_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/spies_purgitory.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/loch/vs_code/c++/boston_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/spies_purgitory.dir/main.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spies_purgitory.dir/main.cpp.o -c /home/loch/vs_code/c++/boston_final/main.cpp
 
 CMakeFiles/spies_purgitory.dir/main.cpp.i: cmake_force
@@ -184,6 +210,8 @@ spies_purgitory_OBJECTS = \
 "CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.o" \
 "CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.o" \
 "CMakeFiles/spies_purgitory.dir/src/rendering/font/font.cpp.o" \
+"CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attack.cpp.o" \
+"CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attacks.cpp.o" \
 "CMakeFiles/spies_purgitory.dir/main.cpp.o"
 
 # External object files for target spies_purgitory
@@ -197,10 +225,12 @@ spies_purgitory: CMakeFiles/spies_purgitory.dir/src/gameplay/box/box_text.cpp.o
 spies_purgitory: CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.o
 spies_purgitory: CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.o
 spies_purgitory: CMakeFiles/spies_purgitory.dir/src/rendering/font/font.cpp.o
+spies_purgitory: CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attack.cpp.o
+spies_purgitory: CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attacks.cpp.o
 spies_purgitory: CMakeFiles/spies_purgitory.dir/main.cpp.o
 spies_purgitory: CMakeFiles/spies_purgitory.dir/build.make
 spies_purgitory: CMakeFiles/spies_purgitory.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/loch/vs_code/c++/boston_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable spies_purgitory"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/loch/vs_code/c++/boston_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable spies_purgitory"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/spies_purgitory.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

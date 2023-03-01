@@ -6,14 +6,24 @@ enable_testing()
 
 add_executable(spies_purgitory 
 
+# player
 src/gameplay/heart/heart.cpp
+# my rendering lib
 src/rendering/rendering.cpp
+# scout/fought
 src/gameplay/scout/scout.cpp
+# box prossessing
 src/gameplay/box/box.cpp
 src/gameplay/box/box_text.cpp
+# buttons
 src/gameplay/buttons/button.cpp
+# colide maths
 src/features/collide.cpp
+# font rendering
 src/rendering/font/font.cpp
+# attacks
+src/gameplay/attacks/attack.cpp
+src/gameplay/attacks/attacks.cpp
 
 main.cpp
 

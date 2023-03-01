@@ -20,16 +20,16 @@ void HEART::draw_heart(
 
   // moves the heart in the direction needed if your not touching the box
   // right
-  if (heartvel_right && x <= (box_x + box_width / 2) + width / 2) 
+  if (heartvel_right && x <= (box_x + box_width / 2) - 5) 
     x += heart_vel;
   // left
-  if (heartvel_left)
+  if (heartvel_left && x >= (box_x - box_width / 2) + 5)
     x -= heart_vel;
   // up
-  if (heartvel_up)
+  if (heartvel_up && y <= (box_y + box_height / 2) - 5)
     y += heart_vel;
   // down
-  if (heartvel_down)
+  if (heartvel_down && y >= (box_y - box_height / 2) + 5)
     y -= heart_vel;
 
   renderResizedTexture(
