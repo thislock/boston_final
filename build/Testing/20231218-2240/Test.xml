@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-c++"
+	BuildStamp="20231218-2240-Experimental"
+	Name="pop-os"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="11.4.0"
+	OSName="Linux"
+	Hostname="pop-os"
+	OSRelease="6.6.6-76060606-generic"
+	OSVersion="#202312111032~1702306143~22.04~d28ffec SMP PREEMPT_DYNAMIC Mon D"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="151"
+	ProcessorCacheSize="25600"
+	NumberOfLogicalCPU="20"
+	NumberOfPhysicalCPU="12"
+	TotalVirtualMemory="19920"
+	TotalPhysicalMemory="15825"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="4243.27"
+	>
+	<Testing>
+		<StartDateTime>Dec 18 17:40 EST</StartDateTime>
+		<StartTestTime>1702939252</StartTestTime>
+		<TestList/>
+		<EndDateTime>Dec 18 17:40 EST</EndDateTime>
+		<EndTestTime>1702939252</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

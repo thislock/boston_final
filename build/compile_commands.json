@@ -1,57 +1,57 @@
 [
 {
-  "directory": "/home/loch/vs_code/c++/boston_final/build",
-  "command": "/usr/bin/g++   -I/usr/include/SDL2  -g   -o CMakeFiles/spies_purgitory.dir/src/gameplay/heart/heart.cpp.o -c /home/loch/vs_code/c++/boston_final/src/gameplay/heart/heart.cpp",
-  "file": "/home/loch/vs_code/c++/boston_final/src/gameplay/heart/heart.cpp"
+  "directory": "/home/lochlan/vscode/c++/boston_final/build",
+  "command": "/usr/bin/c++  -I/home/lochlan/vscode/c++/boston_final/spies_purgitory -I/usr/include/SDL2 -g -o CMakeFiles/spies_purgitory.dir/src/gameplay/heart/heart.cpp.o -c /home/lochlan/vscode/c++/boston_final/src/gameplay/heart/heart.cpp",
+  "file": "/home/lochlan/vscode/c++/boston_final/src/gameplay/heart/heart.cpp"
 },
 {
-  "directory": "/home/loch/vs_code/c++/boston_final/build",
-  "command": "/usr/bin/g++   -I/usr/include/SDL2  -g   -o CMakeFiles/spies_purgitory.dir/src/rendering/rendering.cpp.o -c /home/loch/vs_code/c++/boston_final/src/rendering/rendering.cpp",
-  "file": "/home/loch/vs_code/c++/boston_final/src/rendering/rendering.cpp"
+  "directory": "/home/lochlan/vscode/c++/boston_final/build",
+  "command": "/usr/bin/c++  -I/home/lochlan/vscode/c++/boston_final/spies_purgitory -I/usr/include/SDL2 -g -o CMakeFiles/spies_purgitory.dir/src/rendering/rendering.cpp.o -c /home/lochlan/vscode/c++/boston_final/src/rendering/rendering.cpp",
+  "file": "/home/lochlan/vscode/c++/boston_final/src/rendering/rendering.cpp"
 },
 {
-  "directory": "/home/loch/vs_code/c++/boston_final/build",
-  "command": "/usr/bin/g++   -I/usr/include/SDL2  -g   -o CMakeFiles/spies_purgitory.dir/src/gameplay/scout/scout.cpp.o -c /home/loch/vs_code/c++/boston_final/src/gameplay/scout/scout.cpp",
-  "file": "/home/loch/vs_code/c++/boston_final/src/gameplay/scout/scout.cpp"
+  "directory": "/home/lochlan/vscode/c++/boston_final/build",
+  "command": "/usr/bin/c++  -I/home/lochlan/vscode/c++/boston_final/spies_purgitory -I/usr/include/SDL2 -g -o CMakeFiles/spies_purgitory.dir/src/gameplay/scout/scout.cpp.o -c /home/lochlan/vscode/c++/boston_final/src/gameplay/scout/scout.cpp",
+  "file": "/home/lochlan/vscode/c++/boston_final/src/gameplay/scout/scout.cpp"
 },
 {
-  "directory": "/home/loch/vs_code/c++/boston_final/build",
-  "command": "/usr/bin/g++   -I/usr/include/SDL2  -g   -o CMakeFiles/spies_purgitory.dir/src/gameplay/box/box.cpp.o -c /home/loch/vs_code/c++/boston_final/src/gameplay/box/box.cpp",
-  "file": "/home/loch/vs_code/c++/boston_final/src/gameplay/box/box.cpp"
+  "directory": "/home/lochlan/vscode/c++/boston_final/build",
+  "command": "/usr/bin/c++  -I/home/lochlan/vscode/c++/boston_final/spies_purgitory -I/usr/include/SDL2 -g -o CMakeFiles/spies_purgitory.dir/src/gameplay/box/box.cpp.o -c /home/lochlan/vscode/c++/boston_final/src/gameplay/box/box.cpp",
+  "file": "/home/lochlan/vscode/c++/boston_final/src/gameplay/box/box.cpp"
 },
 {
-  "directory": "/home/loch/vs_code/c++/boston_final/build",
-  "command": "/usr/bin/g++   -I/usr/include/SDL2  -g   -o CMakeFiles/spies_purgitory.dir/src/gameplay/box/box_text.cpp.o -c /home/loch/vs_code/c++/boston_final/src/gameplay/box/box_text.cpp",
-  "file": "/home/loch/vs_code/c++/boston_final/src/gameplay/box/box_text.cpp"
+  "directory": "/home/lochlan/vscode/c++/boston_final/build",
+  "command": "/usr/bin/c++  -I/home/lochlan/vscode/c++/boston_final/spies_purgitory -I/usr/include/SDL2 -g -o CMakeFiles/spies_purgitory.dir/src/gameplay/box/box_text.cpp.o -c /home/lochlan/vscode/c++/boston_final/src/gameplay/box/box_text.cpp",
+  "file": "/home/lochlan/vscode/c++/boston_final/src/gameplay/box/box_text.cpp"
 },
 {
-  "directory": "/home/loch/vs_code/c++/boston_final/build",
-  "command": "/usr/bin/g++   -I/usr/include/SDL2  -g   -o CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.o -c /home/loch/vs_code/c++/boston_final/src/gameplay/buttons/button.cpp",
-  "file": "/home/loch/vs_code/c++/boston_final/src/gameplay/buttons/button.cpp"
+  "directory": "/home/lochlan/vscode/c++/boston_final/build",
+  "command": "/usr/bin/c++  -I/home/lochlan/vscode/c++/boston_final/spies_purgitory -I/usr/include/SDL2 -g -o CMakeFiles/spies_purgitory.dir/src/gameplay/buttons/button.cpp.o -c /home/lochlan/vscode/c++/boston_final/src/gameplay/buttons/button.cpp",
+  "file": "/home/lochlan/vscode/c++/boston_final/src/gameplay/buttons/button.cpp"
 },
 {
-  "directory": "/home/loch/vs_code/c++/boston_final/build",
-  "command": "/usr/bin/g++   -I/usr/include/SDL2  -g   -o CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.o -c /home/loch/vs_code/c++/boston_final/src/features/collide.cpp",
-  "file": "/home/loch/vs_code/c++/boston_final/src/features/collide.cpp"
+  "directory": "/home/lochlan/vscode/c++/boston_final/build",
+  "command": "/usr/bin/c++  -I/home/lochlan/vscode/c++/boston_final/spies_purgitory -I/usr/include/SDL2 -g -o CMakeFiles/spies_purgitory.dir/src/features/collide.cpp.o -c /home/lochlan/vscode/c++/boston_final/src/features/collide.cpp",
+  "file": "/home/lochlan/vscode/c++/boston_final/src/features/collide.cpp"
 },
 {
-  "directory": "/home/loch/vs_code/c++/boston_final/build",
-  "command": "/usr/bin/g++   -I/usr/include/SDL2  -g   -o CMakeFiles/spies_purgitory.dir/src/rendering/font/font.cpp.o -c /home/loch/vs_code/c++/boston_final/src/rendering/font/font.cpp",
-  "file": "/home/loch/vs_code/c++/boston_final/src/rendering/font/font.cpp"
+  "directory": "/home/lochlan/vscode/c++/boston_final/build",
+  "command": "/usr/bin/c++  -I/home/lochlan/vscode/c++/boston_final/spies_purgitory -I/usr/include/SDL2 -g -o CMakeFiles/spies_purgitory.dir/src/rendering/font/font.cpp.o -c /home/lochlan/vscode/c++/boston_final/src/rendering/font/font.cpp",
+  "file": "/home/lochlan/vscode/c++/boston_final/src/rendering/font/font.cpp"
 },
 {
-  "directory": "/home/loch/vs_code/c++/boston_final/build",
-  "command": "/usr/bin/g++   -I/usr/include/SDL2  -g   -o CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attack.cpp.o -c /home/loch/vs_code/c++/boston_final/src/gameplay/attacks/attack.cpp",
-  "file": "/home/loch/vs_code/c++/boston_final/src/gameplay/attacks/attack.cpp"
+  "directory": "/home/lochlan/vscode/c++/boston_final/build",
+  "command": "/usr/bin/c++  -I/home/lochlan/vscode/c++/boston_final/spies_purgitory -I/usr/include/SDL2 -g -o CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attack.cpp.o -c /home/lochlan/vscode/c++/boston_final/src/gameplay/attacks/attack.cpp",
+  "file": "/home/lochlan/vscode/c++/boston_final/src/gameplay/attacks/attack.cpp"
 },
 {
-  "directory": "/home/loch/vs_code/c++/boston_final/build",
-  "command": "/usr/bin/g++   -I/usr/include/SDL2  -g   -o CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attacks.cpp.o -c /home/loch/vs_code/c++/boston_final/src/gameplay/attacks/attacks.cpp",
-  "file": "/home/loch/vs_code/c++/boston_final/src/gameplay/attacks/attacks.cpp"
+  "directory": "/home/lochlan/vscode/c++/boston_final/build",
+  "command": "/usr/bin/c++  -I/home/lochlan/vscode/c++/boston_final/spies_purgitory -I/usr/include/SDL2 -g -o CMakeFiles/spies_purgitory.dir/src/gameplay/attacks/attacks.cpp.o -c /home/lochlan/vscode/c++/boston_final/src/gameplay/attacks/attacks.cpp",
+  "file": "/home/lochlan/vscode/c++/boston_final/src/gameplay/attacks/attacks.cpp"
 },
 {
-  "directory": "/home/loch/vs_code/c++/boston_final/build",
-  "command": "/usr/bin/g++   -I/usr/include/SDL2  -g   -o CMakeFiles/spies_purgitory.dir/main.cpp.o -c /home/loch/vs_code/c++/boston_final/main.cpp",
-  "file": "/home/loch/vs_code/c++/boston_final/main.cpp"
+  "directory": "/home/lochlan/vscode/c++/boston_final/build",
+  "command": "/usr/bin/c++  -I/home/lochlan/vscode/c++/boston_final/spies_purgitory -I/usr/include/SDL2 -g -o CMakeFiles/spies_purgitory.dir/main.cpp.o -c /home/lochlan/vscode/c++/boston_final/main.cpp",
+  "file": "/home/lochlan/vscode/c++/boston_final/main.cpp"
 }
 ]
